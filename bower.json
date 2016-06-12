@@ -1,0 +1,22 @@
+{
+  "name": "bower.json",
+  "authors": [
+    "fulloa <felipe.ulload@alumnos.uv.cl>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-google-maps": "^2.3.3",
+    "bootstrap": "^3.3.6",
+    "angular-route": "^1.5.6"
+  }
+}
