@@ -3,8 +3,8 @@ var app = angular.module('myApp', ['uiGmapgoogle-maps','ngRoute']);
 app.config(['$routeProvider', function($routeProvider){
     $routeProvider
     .when("/", {
-        templateUrl: "views/viewAdmin.html",
-        controller: "homepageController"
+        templateUrl: "views/viewLogin.html",
+        controller: "loginController"
     })
      .when("/admin", {
         templateUrl: "views/viewAdmin.html",
@@ -14,7 +14,7 @@ app.config(['$routeProvider', function($routeProvider){
         templateUrl: "views/viewUser.html",
         controller: "userController"
     })
-    .when("/registro", {
+    .when("/registrar", {
         templateUrl: "views/formulario_registro.html",
         controller: "registerController"
     })
