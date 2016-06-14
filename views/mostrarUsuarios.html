@@ -8,10 +8,23 @@
 			    </button>
 				<a class="navbar-brand active" href="#/"><span id="cruz" class="glyphicon glyphicon-plus"></span>HelpTrack</a>
 			</div>
-			<ul class="nav navbar-nav navbar-right">
-			        		<li><a href="#/login-out"><span class="glyphicon glyphicon-log-out"></span> Login out</a></li>
-      					</ul>
-		</div>	
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+			      <li class="active"><a href="">Admin</a></li>
+			      <li class="dropdown">
+			        	<a class="dropdown-toggle" data-toggle="dropdown" href="">Menu
+			        	<span class="caret"></span></a>
+			        <ul class="dropdown-menu">
+			          <li><a href="#/admin/usuarios">Gestionar Usuarios</a></li>
+			          <li><a id="drop" onclick="'drop()'">Gestionar Ambulancias</a></li>
+			         
+			        </ul>
+			     </ul>
+			     <ul class="nav navbar-nav navbar-right">
+			        <li ng-controller="cerrarSesionController"><a ng-click="openModal('sm')"><span class="glyphicon glyphicon-log-out"></span> Login out</a></li>
+      			</ul>
+			</div>
+		</div>
 </nav>
 	<div class="container-fluid">
 				<table class="table table-condensed">

@@ -1,4 +1,4 @@
-var app = angular.module('myApp', ['uiGmapgoogle-maps','ngRoute']);
+var app = angular.module('myApp', ['uiGmapgoogle-maps','ngRoute','ui.bootstrap']);
 
 app.config(['$routeProvider', function($routeProvider){
     $routeProvider
@@ -18,17 +18,9 @@ app.config(['$routeProvider', function($routeProvider){
         templateUrl: "views/formulario_registro.html",
         controller: "registerController"
     })
-     .when("/usuarios", {
+     .when("/admin/usuarios", {
         templateUrl: "views/mostrarUsuarios.html",
         controller: "showController"
-    })
-    .when("/login-out", {
-        templateUrl: "views/cerrarSesion.html",
-        controller: "cerrarSesionController"
-    })
-     .when("/out", {
-        templateUrl: "views/homepage.html",
-        controller: "homepageController"
     })
     .otherwise({ redirectTo : "/"});
 }]);
