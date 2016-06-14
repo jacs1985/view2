@@ -9,7 +9,7 @@ app.controller('showController', ['$scope', function($scope){
 		usuario: "usuario 2",
 		contrasena: "contrasena 2"},
 
-		{nombre: "nombre 3",
+ 		{nombre: "nombre 3",
 		usuario: "usuario 3",
 		contrasena: "contrasena 3"}
 	];

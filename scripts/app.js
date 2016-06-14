@@ -23,4 +23,8 @@ app.config(['$routeProvider', function($routeProvider){
         controller: "showController"
     })
     .otherwise({ redirectTo : "/"});
+
+
+
+    
 }]);
