@@ -16,11 +16,15 @@ app.config(['$routeProvider', function($routeProvider){
     })
     .when("/registrar", {
         templateUrl: "views/formulario_registro.html",
-        controller: "registerController"
+        controller: "registrarController"
     })
      .when("/admin/usuarios", {
         templateUrl: "views/mostrarUsuarios.html",
         controller: "showController"
+    })
+     .when("/admin/ambulancias", {
+        templateUrl: "views/viewAdmin.html",
+        controller: "adminController"
     })
     .otherwise({ redirectTo : "/"});
 
